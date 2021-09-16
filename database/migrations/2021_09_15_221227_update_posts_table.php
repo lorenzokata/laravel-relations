@@ -17,7 +17,8 @@ class UpdatePostsTable extends Migration
             $table->foreignId('category_id')
             ->nullable()
             ->after('id')
-            ->constrained('categories');
+            ->constrained('categories')
+            ->nullOnDelete();
         });
     }
 

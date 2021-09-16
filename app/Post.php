@@ -15,7 +15,7 @@ class Post extends Model
         'content'
     ];
 
-    public function postCategory(){
-        return $this->hasMany('app\Category');
+    public function category(){
+        return $this->belongsTo('App\Category');
     }
 }

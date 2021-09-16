@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Post;
 use Illuminate\support\Str;
+use App\Post;
 
 class PostsSeeder extends Seeder
 {

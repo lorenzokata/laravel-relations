@@ -8,7 +8,7 @@ class Category extends Model
 {
     protected $table = 'categories';
 
-    public function categoryPost(){
-        return $this->belongsTo('app\Post');
+    public function posts(){
+        return $this->hasMany('App\Post');
     }
 }
